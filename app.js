@@ -5,6 +5,10 @@ const bodyParser = require('body-parser')
 Server.use(bodyParser.urlencoded({extended: false}))
 Server.use(bodyParser.json())
 
+Server.get("/", (req, res) => {
+  res.send('CiCd by safrudin')
+})
+
 Server.post("/", (req, res) => {
   console.log(req)
   res.send('hay')

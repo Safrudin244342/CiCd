@@ -10,7 +10,7 @@ Server.get("/", (req, res) => {
 })
 
 Server.post("/", (req, res) => {
-  console.log(req)
+  console.log(req.body)
   res.send('hay')
 })
 

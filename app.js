@@ -11,7 +11,7 @@ Server.get("/", (req, res) => {
 
 Server.post("/", (req, res) => {
   console.log(req.body)
-  res.send('hay')
+  res.send('hay ')
 })
 
 Server.listen(9000, () => {
